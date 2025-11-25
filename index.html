@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icone_portfolio.png" type="image/png">
+    <title>Portfolio de Tim Carrara | Développeur Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/logo_portfolio.png" alt="logo portfolio"></a></div>
+            <ul id="navMenu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p class="subtitle-1">Je suis Tim Carrara</p>
+                <p class="subtitle-2">Développeur Full Stack</p>
+                <p class="description">
+                    Ce portfolio présente mes projets, mon expérience de stage de deuxième année et les compétences que j’ai développées tout au long de ma formation.
+                </p>
+                <div class="button-group">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>A propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Qui suis-je ?</h3> 
+                        <p> 
+                            Salut ! Moi, c'est Tim. Je suis développeur full stack en formation, passionné par la création d'applications web et logicielles. Polyvalent sur les aspects frontend et backend, j'aime transformer des idées ambitieuses en solutions simples, performantes et soignées. Donner vie à des projets innovants et concevoir des outils réellement utiles, c'est ce qui me motive chaque jour. 
+                        </p> 
+                        <p> 
+                            Mon parcours m'a permis de travailler sur des projets variés : développement d'outils internes, création d'applications web complètes et bien plus encore. Toujours curieux et motivé, je continue d'apprendre pour rester en phase avec les technologies actuelles.
+                        </p>
+                        <button><a href="pdf/CV_CARRARA-TIM.pdf" download>Téléchargez mon CV</a></button>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/icone_cerveau_tech.png" alt="icone_cerveau_tech">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projets">
+            <div class="container">
+                <h2>MES PROJETS</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-emoji">😴</div>
+                        <h3>Assistant intelligent du sommeil</h3>
+                        <p>Développement collaboratif d'une application aidant à améliorer le sommeil des utilisateurs intégrant microcontrôleurs et traitement de données via l'intelligence artificielle</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <a href="#" class="project-link">Voir plus →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-emoji">💼</div>
+                        <h3>Portfolio</h3>
+                        <p>Création d'un site web personnel pour valoriser mes compétences et projets.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-emoji">🌐</div>
+                        <h3>ServerInventory</h3>
+                        <p>Outil interne réalisé durant mon stage chez l'agence web Koredge permettant la centralisation des informations des domaines hébergés sur les différents serveurs de l'entreprise.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHPMyAdmin</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-emoji">🎃</div>
+                        <h3>Creepy Night</h3>
+                        <p>Conception en équipe d'une application web dédiée à un festival d'horreur fictif, offrant une expérience interactive et une gestion dynamique du contenu.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <a href="https://github.com/Zuuret/SAE-S3-S4_Creepy_Night" class="project-link">Voir plus →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-emoji">♟️</div>
+                        <h3>Le Roi des Roses</h3>
+                        <p>Développement d'une version numérique en équipe d'un jeux de plateau "Le Roi des Roses".</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaFX</span>
+                        </div>
+                        <a href="https://github.com/FlorianHegele/the-rose-king" class="project-link">Voir plus →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-emoji">🚲</div>
+                        <h3>Site e-commerce de vélos</h3>
+                        <p>Développement collaboratif d'une plateforme en ligne dédiée à la vente de vélos.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Pycharm</span>
+                        </div>
+                        <a href="https://github.com/timcarrara/Site_e-commerce_velo" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="competences">
+            <div class="container">
+                <h2>Mes compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <div class="skill-subcategory">
+                            <h4>Langages</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="HTML"><img src="images/logo_html.png" alt="logo html"></div>
+                                <div class="skill-item" data-name="CSS"><img src="images/logo_css.png" alt="logo css"></div>
+                                <div class="skill-item" data-name="JavaScript"><img src="images/logo_js.png" alt="logo js"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>Framework</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="Vue.js"><img src="images/logo_vuejs.png" alt="logo vue.js"></div>
+                                <div class="skill-item" data-name="JavaFX"><img src="images/logo_javafx.png" alt="logo java fx"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <div class="skill-subcategory">
+                            <h4>Langages</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="PHP"><img src="images/logo_php.png" alt="logo php"></div>
+                                <div class="skill-item" data-name="Java"><img src="images/logo_java.png" alt="logo java"></div>
+                                <div class="skill-item" data-name="Node.js"><img src="images/logo_nodejs.png" alt="logo node.js"></div>
+                                <div class="skill-item" data-name="Python"><img src="images/logo_python.png" alt="logo python"></div>
+                                <div class="skill-item" data-name="C"><img src="images/logo_C.png" alt="logo C"></div>
+                                <div class="skill-item" data-name="C++"><img src="images/logo_C++.png" alt="logo C++"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>Frameworks</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="Express.js"><img src="images/logo_express.png" alt="logo express.js"></div>
+                                <div class="skill-item" data-name="Flask"><img src="images/logo_flask.png" alt="logo flask"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>Base de Données</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="MySQL"><img src="images/logo_mysql.png" alt="logo mysql"></div>
+                                <div class="skill-item" data-name="MongoDB"><img src="images/logo_mongodb.png" alt="logo mongodb"></div>
+                                <div class="skill-item" data-name="PostgreSQL"><img src="images/logo_postgresql.png" alt="logo postgresql"></div>
+                                <div class="skill-item" data-name="NoSQL"><img src="images/logo_nosql.png" alt="logo nosql"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>API</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="REST"><img src="images/logo_api_rest.png" alt="logo api rest"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Outils</h3>
+                        <div class="skill-subcategory">
+                            <h4>Développement</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="Visual Studio"><img src="images/logo_vscode.png" alt="logo visual studio code"></div>
+                                <div class="skill-item" data-name="Intellij Idea"><img src="images/logo_intellij.png" alt="logo intellij idea"></div>
+                                <div class="skill-item" data-name="Pycharm"><img src="images/logo_pycharm.png" alt="logo pycharm"></div>
+                                <div class="skill-item" data-name="DataGrip"><img src="images/logo_datagrip.png" alt="logo datagrip"></div>
+                                <div class="skill-item" data-name="Clion"><img src="images/logo_clion.png" alt="logo clion"></div>
+                                <div class="skill-item" data-name="Postman"><img src="images/logo_postman.png" alt="logo postman"></div>
+                                <div class="skill-item" data-name="Docker"><img src="images/logo_docker.png" alt="logo docker"></div>
+                                <div class="skill-item" data-name="PHPMyAdmin"><img src="images/logo_phpmyadmin.png" alt="logo php my admin    "></div>
+                                <div class="skill-item" data-name="Git"><img src="images/logo_git.png" alt="logo git"></div>
+                                <div class="skill-item" data-name="Fork"><img src="images/logo_fork.png" alt="logo fork"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>OS</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="Windows"><img src="images/logo_windows.png" alt="logo windows"></div>
+                                <div class="skill-item" data-name="Linux"><img src="images/logo_linux.png" alt="logo linux"></div>
+                            </div>
+                        </div>
+                        <div class="skill-subcategory">
+                            <h4>Gestion de Projets</h4>
+                            <div class="skill-list">
+                                <div class="skill-item" data-name="Trello"><img src="images/logo_trello.png" alt="logo trello"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Restons en Contact</h2>
+                <div class="contact-wrapper">
+
+                    <div class="contact-forms">
+                        <form action="https://formspree.io/f/xqajlgdp" method="POST" class="contact-form">
+                            <div class="fullname-form">
+                                <div class="prenom">
+                                    <label for="prenom">Prénom *</label>
+                                    <input type="text" id="prenom" name="prenom" required>
+                                </div>
+
+                                <div class="nom">
+                                    <label for="nom">Nom *</label>
+                                    <input type="text" id="nom" name="nom" required>
+                                </div>
+                            </div>
+
+                            <div class="info-contact-form">
+                                <div class="email">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="telephone">
+                                    <label for="telephone">Téléphone *</label>
+                                    <input type="tel" id="telephone" name="telephone" pattern="[0-9+ ]{6,15}">
+                                </div>
+                            </div>
+
+                            <div class="objet">
+                                <label for="objet">Objet *</label>
+                                <input type="text" id="objet" name="objet" required>
+                            </div>
+
+                            <div class="message">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-side">
+                        <h3>Ressources & Contacts</h3>
+
+                        <div class="contact-item">
+                            <img src="images/icone_maison.png" alt="logo maison">
+                            <p><strong>Adresse : </strong>25400 Audincourt</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/logo_gmail.png" alt="logo gmail">
+                            <p><strong>Mail personnel : </strong>carrara.tim85@gmail.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/logo_zimbra.png" alt="logo zimbra">
+                            <p><strong>Mail universitaire : </strong>tim.carrara@edu.univ-fcomte.fr</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/icone_telephone.png" alt="icone telephone">
+                            <p><strong>Téléphone : </strong>07 87 27 00 30</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/logo_linkedin.png" alt="logo linkedin">
+                            <p><strong>LinkedIn :</strong><a href="https://www.linkedin.com/in/tim-carrara-0a0ab4296" target="_blank"> Tim Carrara</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/logo_github.png" alt="logo github">
+                            <p><strong>Github :</strong><a href="https://github.com/timcarrara" target="_blank"> timcarrara</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright 2025 - Tim CARRARA.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
