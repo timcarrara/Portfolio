@@ -390,6 +390,290 @@ section h2 {
             color: #93c5fd;
         }
 
+
+/* Style pour la modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(88, 28, 135, 0.2));
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 8px;
+    margin: 2% auto;
+    padding: 20px;
+    width: 90%;
+    height: 95%;
+    max-width: 2000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1001;
+}
+
+.close-btn:hover {
+    color: #f44336;
+}
+
+#modalProjectTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: left;
+    background: linear-gradient(to right, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+#modalProjectPeriod {
+    font-size: 17px;
+    color: #93c5fd;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+#modalProjectDetails {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#modalProjectDetails > div:first-child {
+    flex: 4;
+}
+
+#modalProjectDetails > div:first-child > p:first-of-type {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#modalProjectDetails .project-specs {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#modalProjectDetails .project-specs p {
+    margin-bottom: 8px;
+    color: #d1d5db;
+}
+
+#modalProjectDetails .project-images {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    object-fit: contain;
+    max-height: 500px;
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #93c5fd;
+    font-style: italic;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(59, 130, 246, 0.8);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(59, 130, 246, 1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: rgba(59, 130, 246, 1);
+    transform: scale(1.2);
+}
+
+#modalProjectDetails h4 {
+    font-size: 16px;
+    margin: 12px 0 8px;
+    color: #93c5fd;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#modalProjectDetails .tech-tags {
+    margin-bottom: 16px;
+}
+
+.single-image {
+    width: 100%;
+}
+
+.single-image img {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.599);
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 8px;
+    color: #60a5fa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+}
+
+.github-link img {
+    width: 22px;
+    height: 22px;
+}
+
+#returnBtn {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+#returnBtn:hover {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    #modalProjectDetails {
+        flex-direction: column;
+    }
+
+    #modalProjectDetails .project-images {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 24px;
+        margin: 20% auto;
+    }
+
+    #modalProjectTitle {
+        font-size: 20px;
+    }
+
+    #modalProjectDetails {
+        flex-direction: column;
+    }
+
+    #modalProjectDetails .project-images {
+        min-width: 100%;
+    }
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;

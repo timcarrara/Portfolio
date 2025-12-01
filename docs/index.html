@@ -35,7 +35,7 @@
             <div class="hero-content">
                 <h1>Bienvenue sur mon portfolio</h1>
                 <p class="subtitle-1">Je suis Tim Carrara</p>
-                <p class="subtitle-2">Développeur Full Stack</p>
+                <p class="subtitle-2">Étudiant en informatique & Développeur Full Stack</p>
                 <p class="description">
                     Ce portfolio présente mes projets, mon expérience de stage de deuxième année et les compétences que j’ai développées tout au long de ma formation.
                 </p>
@@ -54,10 +54,7 @@
                     <div class="about-text">
                         <h3>Qui suis-je ?</h3> 
                         <p> 
-                            Salut ! Moi, c'est Tim. Je suis développeur full stack en formation, passionné par la création d'applications web et logicielles. Polyvalent sur les aspects frontend et backend, j'aime transformer des idées ambitieuses en solutions simples, performantes et soignées. Donner vie à des projets innovants et concevoir des outils réellement utiles, c'est ce qui me motive chaque jour. 
-                        </p> 
-                        <p> 
-                            Mon parcours m'a permis de travailler sur des projets variés : développement d'outils internes, création d'applications web complètes et bien plus encore. Toujours curieux et motivé, je continue d'apprendre pour rester en phase avec les technologies actuelles.
+                            Bonjour ! Je m’appelle Tim Carrara, étudiant en BUT Informatique à l’IUT de Belfort et développeur full‑stack en formation. Passionné par la création d’applications et de sites web, j’aime transformer des idées en produits utiles et faciles à utiliser. J’apprécie le travail en équipe, la résolution de problèmes et l’amélioration continue. Je suis motivé par des projets concrets où je peux apprendre et apporter de la valeur. Je me tiens naturellement à jour des technologies actuelles afin de progresser continuellement dans ce domaine qui me passionne : l’informatique !
                         </p>
                         <button><a href="pdf/CV_CARRARA-TIM.pdf" download>Téléchargez mon CV</a></button>
                     </div>
@@ -73,11 +70,22 @@
             <div class="container">
                 <h2>MES PROJETS</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card"
+                        data-specs="<p>Ce projet vise à offrir un suivi complet de la qualité du sommeil en combinant plusieurs sources de données : capteurs biométriques, enregistrements audio et analyses avancées issues d’un moteur d’intelligence artificielle. Il s’adresse aussi bien aux utilisateurs cherchant à améliorer leur sommeil qu’aux spécialistes du sommeil, en fournissant une évaluation à la fois précise et personnalisée des cycles et de la récupération.</p>
+
+                        <p>Le système s'appuie sur une structure conçue en plusieurs blocs indépendants. Un ESP32 se charge de récupérer les informations issues des capteurs : respiration, micro-mouvements, variations du rythme cardiaque, avant de les transférer vers un serveur central développé en Java. Des modules Python se chargent ensuite d’analyser aussi bien les signaux physiologiques que les enregistrements audio, afin d’en extraire des mesures pertinentes : stabilité des cycles, détection d’événements perturbateurs, niveau de récupération, etc.
+                        Une API construite avec Node.js assure ensuite la liaison avec une base MongoDB et met ces informations à disposition de l’interface front-end réalisée avec Vue.js 3.</p>
+
+                        <p>Ce projet m’offre l’occasion de travailler sur l’organisation d’un système distribué, la communication entre services et l’intégration d’algorithmes dédiés à l’interprétation des données du sommeil. J’y mets aussi en place une chaîne de déploiement complète reposant sur Docker et GitLab CI/CD. C’est un bon moyen de renforcer autant mes compétences logicielles que ma maîtrise du traitement des données issues de capteurs et de flux multimédias.</p>"
+
+                        data-images="<img src='images/assistant_sommeil_architecture.png' alt='Architecture SAE' data-caption='Figure 1 - Architecture du projet'>">
+
                         <div class="project-emoji">😴</div>
                         <h3>Assistant intelligent du sommeil</h3>
+                        <h4>2025-2026 • Projet de troisième année</h4>
                         <p>Développement collaboratif d'une application aidant à améliorer le sommeil des utilisateurs intégrant microcontrôleurs et traitement de données via l'intelligence artificielle</p>
                         <div class="tech-tags">
+                            <span class="tech-tag">ESP32</span>
                             <span class="tech-tag">Vue.js</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Java</span>
@@ -85,6 +93,7 @@
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">API REST</span>
                             <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitLab CI/CD</span>
                         </div>
                         <a href="#" class="project-link">Voir plus →</a>
                     </div>
@@ -92,17 +101,34 @@
                     <div class="project-card">
                         <div class="project-emoji">💼</div>
                         <h3>Portfolio</h3>
+                        <h4>2025 • Projet personnel</h4>
                         <p>Création d'un site web personnel pour valoriser mes compétences et projets.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card"
+                        data-specs="<p>Dans le cadre de ce stage, j’ai conçu un outil capable de centraliser automatiquement les informations techniques des différents serveurs Plesk de l’entreprise. La première étape consistait à interroger à distance les APIs REST et XML-RPC de Plesk afin de récupérer les domaines actifs, leur statut et leur version de PHP, en m’appuyant sur la documentation Swagger, des clés d’authentification dédiées et une classe PHP orientée objet que j’ai développée pour automatiser et fiabiliser les appels réseau.</p>
+
+                        <p>J’ai ensuite étendu le système en lui permettant de gérer plusieurs serveurs à partir d’un simple fichier de configuration JSON. Cette structure rend l’ajout d’un nouveau serveur immédiat, sans modifier le code, tout en garantissant une meilleure maintenabilité et une meilleure sécurité grâce à l’isolation des clés API et au contrôle des accès.</p>
+
+                        <p>Une autre partie de la mission visait à analyser chaque domaine afin d’évaluer ses critères SEO essentiels et de vérifier que les environnements de préproduction n’étaient ni indexés, ni accessibles librement. Pour cela, j’ai mis en place des routines capables d’examiner le code source des sites, d’inspecter les balises HTML, de tester les réponses HTTP et d’identifier automatiquement les éventuelles anomalies. L’ensemble de ces vérifications s’appuie sur des fonctions modulaires et réutilisables pour traiter un grand nombre de sites de manière homogène.</p>
+                        
+                        <p>Enfin, pour rendre l’outil exploitable au quotidien, j’ai conçu une base de données structurée à partir d’un modèle conceptuel dédié, puis ajouté un script cron chargé de collecter, comparer et stocker chaque jour les nouvelles informations. Ce fonctionnement permet d’éviter les appels API coûteux, d’améliorer considérablement les performances et d’offrir un historique complet consultable via l’interface web.</p>
+                        
+                        <p>Grâce à cette architecture, l’équipe d’hébergement dispose désormais d’un tableau de bord unique, mis à jour automatiquement, facilitant la surveillance des serveurs, la détection des problèmes et la gestion des environnements en préproduction.</p>"
+
+                        data-images="<img src='images/interface_liste.png' alt='Liste des serveurs' data-caption='Figure 1 - Interface de la            liste des différents serveurs Plesk'>
+                                    <img src='images/interface_details_serveurs.png' alt='Détails des serveur' data-caption='Figure 2 – Domaines du serveur 34948f avec version PHP, statut SEO et niveau de protection.'>
+                                    <img src='images/interface_historique.png' alt='Historique des modifications' data-caption='Figure 3 – Suivi quotidien des modifications techniques détectées, lorsqu’il y en a'>">
+                        
                         <div class="project-emoji">🌐</div>
-                        <h3>ServerInventory</h3>
-                        <p>Outil interne réalisé durant mon stage chez l'agence web Koredge permettant la centralisation des informations des domaines hébergés sur les différents serveurs de l'entreprise.</p>
+                        <h3>Server Inventory</h3>
+                        <h4>2025 • Stage de 12 semaines - Koredge</h4>
+                        <p>Outil interne réalisé durant mon stage permettant la centralisation des informations des domaines hébergés sur les différents serveurs de l'entreprise.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">API REST</span>
@@ -111,11 +137,28 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
+                        <a href="#" class="project-link">Voir plus →</a>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card"
+                        data-specs="<p>Cette application web a été conçue pour gérer l’ensemble de l’univers Creepy Night, depuis les zones du festival jusqu’aux animations et aux équipes qui y participent. Elle offre une vision claire de toutes les experiences horrifiques proposées, un accès rapide aux informations essentielles, ainsi qu’une carte interactive permettant de localiser les différentes zones, attractions et services mis à disposition des visiteurs.</p>
+
+                        <p>Le back-end s’appuie sur une API REST développée avec Node.js et Express, connectée à une base de données PostgreSQL. Cette architecture garantit une gestion fiable des données du festival, une communication fluide entre les services et une évolutivité adaptée à l’enrichissement progressif de l’univers du festival.</p>
+
+                        <p>Le front-end, développé avec Vue.js, offre une interface intuitive permettant à chaque utilisateur d’accéder uniquement aux outils correspondant à son rôle. Les organisateurs peuvent consulter, filtrer et administrer les zones, les animations et les ressources du festival, tout en gérant le contenu du site et les différents utilisateurs. Les prestataires disposent quant à eux d’un espace dédié pour mettre à jour leurs articles, leur page de présentation et leur livre d’or. Cette gestion des droits, fondée sur une authentification par rôles, garantit une administration sécurisée et adaptée à chaque profil, tout en préservant la cohérence globale de l’événement.</p>
+                        
+                        <p>Ce projet m’a offert l’occasion de travailler sur un développement complet et ambitieux, couvrant l’ensemble de la chaîne full stack : modélisation d’une base de données complexe, création d’une API structurée, réalisation d’interfaces dynamiques et mise en place d’un système d’autorisations avancé. Il reflète ma capacité à mener un projet vaste et multidimensionnel, en reliant exigences techniques, contraintes métier et univers créatif pour aboutir à une application cohérente, robuste et parfaitement intégrée.</p>"
+
+                        data-images="<img src='images/accueil_creepy_night.png' alt='Accueil site Creepy Night' data-caption='Figure 1 - Page          d’accueil du site Creepy Night, présentant une vue générale de l’univers'>
+                                    <img src='images/map_creepy_night.png' alt='Map du festival' data-caption='Figure 2 - Carte interactive du festival permettant de visualiser les différentes zones et attractions proposées aux visiteurs.'>
+                                    <img src='images/admin_page.png' alt='Gestion du contenu admin' data-caption='Figure 3 - Interface d’administration pour la gestion centralisée du contenu et des ressources du festival'>
+                                    <img src='images/gestion_prestataire.png' alt='Gestion du contenu prestataire' data-caption='Figure 4 - Espace dédié aux prestataires pour gérer leurs pages, articles et interactions avec les visiteurs'>"
+
+                        data-github="https://github.com/Zuuret/SAE-S3-S4_Creepy_Night">
+
                         <div class="project-emoji">🎃</div>
                         <h3>Creepy Night</h3>
+                        <h4>2024-2025 • Projet de deuxième année</h4>
                         <p>Conception en équipe d'une application web dédiée à un festival d'horreur fictif, offrant une expérience interactive et une gestion dynamique du contenu.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Vue.js</span>
@@ -125,23 +168,48 @@
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">API REST</span>
                         </div>
-                        <a href="https://github.com/Zuuret/SAE-S3-S4_Creepy_Night" class="project-link">Voir plus →</a>
+                        <a href="#" class="project-link">Voir plus →</a>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card"
+                        data-specs="<p>Ce projet consistait à développer une version complète du jeu de plateau stratégique Le Roi des Roses. J’ai implémenté toute la logique du jeu : gestion du plateau 9x9, des pions bicolores, des cartes Héros et Déplacement, ainsi que les règles complexes liées aux actions possibles (piocher, jouer une carte déplacement seule ou combinée avec une carte héros).</p>
+
+                        <p>L’interface graphique, conçue en JavaFX, permet une expérience fluide et claire, avec une visualisation précise du plateau, des coups jouables et des retours visuels intuitifs. Le projet suit une architecture MVC rigoureuse, séparant la logique métier, l’affichage et les interactions utilisateur, ce qui garantit un code propre, modulaire et facile à maintenir.</p>
+
+                        <p>La complexité du projet réside notamment dans la gestion des déplacements du roi, des pions posés, et dans le calcul final des zones d’adjacence qui déterminent le vainqueur. Des tests ont été réalisés sur les cas limites afin d’assurer la robustesse du moteur de jeu.</p>
+                        
+                        <p>Ce travail m’a permis de renforcer mes compétences en conception orientée objet, gestion d’interfaces graphiques et organisation architecturale d’un projet logiciel complet.</p>"
+
+                        data-images="<img src='images/king_of_roses_concept.png' alt='Jeux King of roses' data-caption='Figure 1 - Vue principale du jeu Le Roi des Roses avec le plateau, les pions et les cartes en main'>"
+
+                        data-github="https://github.com/FlorianHegele/the-rose-king">
+
                         <div class="project-emoji">♟️</div>
                         <h3>Le Roi des Roses</h3>
+                        <h4>2024 • Projet de première année</h4>
                         <p>Développement d'une version numérique en équipe d'un jeux de plateau "Le Roi des Roses".</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">JavaFX</span>
                         </div>
-                        <a href="https://github.com/FlorianHegele/the-rose-king" class="project-link">Voir plus →</a>
+                        <a href="#" class="project-link">Voir plus →</a>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card"
+                        data-specs="<p>Ce projet consistait à développer une application web complète de vente de vélos, intégrant une partie client et une partie administration. Côté client, les utilisateurs peuvent parcourir le catalogue, choisir des vélos selon différentes déclinaisons (taille, couleur), les ajouter à leur panier, puis passer commande via un système sécurisé d'authentification (création de compte, login, mot de passe).</p>
+
+                        <p>La partie administration offre un tableau de bord permettant de gérer le stock, modifier le statut des commandes, ajouter ou modifier des déclinaisons de produits, et superviser l'ensemble des ventes. Ce back-office garantit une gestion efficace et centralisée des données commerciales.</p>
+
+                        <p>L'application repose sur une architecture Flask claire, séparant la logique métier et l’interface utilisateur. Ce projet m’a permis de maîtriser la gestion des bases de données et le développement d’une interface à la fois fonctionnelle et intuitive pour différents profils d’utilisateurs.</p>"
+
+                        data-images="<img src='images/accueil_velo.png' alt='Accueil vélo' data-caption='Figure 2 - Page d’accueil du site e-commerce de vélos avec panier'>
+                                    <img src='images/commande_velo.png' alt=Page admin' data-caption='Figure 1 - Vue utilisateur des commandes avec leur statut de traitement'>"
+
+                        data-github="https://github.com/timcarrara/Site_e-commerce_velo">
+
                         <div class="project-emoji">🚲</div>
                         <h3>Site e-commerce de vélos</h3>
+                        <h4>2024 • Projet de première année</h4>
                         <p>Développement collaboratif d'une plateforme en ligne dédiée à la vente de vélos.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Python</span>
@@ -150,7 +218,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">Pycharm</span>
                         </div>
-                        <a href="https://github.com/timcarrara/Site_e-commerce_velo" class="project-link">Voir plus →</a>
+                        <a href="#" class="project-link">Voir plus →</a>
                     </div>
                 </div>
             </div>
@@ -343,36 +411,16 @@
         <p>© Copyright 2025 - Tim CARRARA - Tous droits réservés</p>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when a link is clicked
-        const navLinks = navMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            });
-        });
-    </script>
+    <!-- Modal pour les détails des projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalProjectTitle">Titre du projet</h2>
+            <h3 id="modalProjectPeriod">Période du projet</h3>
+            <div id="modalProjectDetails">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
