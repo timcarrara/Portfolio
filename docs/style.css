@@ -280,6 +280,40 @@ section h2 {
     line-height: 1.8;
 }
 
+.about-text h3:not(:first-child) {
+    margin-top: 24px;
+}
+
+.formation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 3px solid #3b82f6;
+    border-radius: 4px;
+}
+
+.formation-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.formation-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #93c5fd;
+}
+
+.formation-details p {
+    font-size: 14px;
+    color: #d1d5db;
+    margin: 0;
+    line-height: 1.4;
+}
+
 .about-text button {
     padding: 12px 20px;
     border-radius: 8px;
